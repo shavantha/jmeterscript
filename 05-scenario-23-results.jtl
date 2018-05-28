@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="380" it="0" lt="379" ct="338" ts="1527511403944" s="true" lb="Get OAuth App Data - By name" rc="200" rm="OK" tn="Login with OAuth bearer RPA 1-1" dt="text" by="2092" sby="649" sc="1" ec="0" ng="1" na="1">
+  <assertionResult>
+    <name>200 OK HTTP Code Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=F16B9A7125BC87CC0E0447E817D5C962; Path=/; Secure; HttpOnly
+Content-Type: text/xml;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Mon, 28 May 2018 12:43:23 GMT
+Server: WSO2 Carbon Server
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Basic YWRtaW46YWRtaW4=
+SOAPAction: urn:getOAuthApplicationDataByAppName
+Content-Type: text/xml
+Content-Length: 370
+Host: localhost:9443
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+</requestHeader>
+  <responseData class="java.lang.String">&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;ns:getOAuthApplicationDataByAppNameResponse xmlns:ns=&quot;http://org.apache.axis2/xsd&quot;&gt;&lt;ns:return xmlns:ax2367=&quot;http://oauth.identity.carbon.wso2.org/xsd&quot; xmlns:ax2368=&quot;http://base.identity.carbon.wso2.org/xsd&quot; xmlns:ax2371=&quot;http://dto.oauth.identity.carbon.wso2.org/xsd&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:type=&quot;ax2371:OAuthConsumerAppDTO&quot;&gt;&lt;ax2371:OAuthVersion&gt;OAuth-2.0&lt;/ax2371:OAuthVersion&gt;&lt;ax2371:applicationAccessTokenExpiryTime&gt;3600&lt;/ax2371:applicationAccessTokenExpiryTime&gt;&lt;ax2371:applicationName&gt;Sol23-OAuthApp&lt;/ax2371:applicationName&gt;&lt;ax2371:backChannelLogoutUrl xsi:nil=&quot;true&quot;/&gt;&lt;ax2371:callbackUrl&gt;http://mycallback&lt;/ax2371:callbackUrl&gt;&lt;ax2371:grantTypes&gt;refresh_token password authorization_code&lt;/ax2371:grantTypes&gt;&lt;ax2371:idTokenEncryptionAlgorithm&gt;null&lt;/ax2371:idTokenEncryptionAlgorithm&gt;&lt;ax2371:idTokenEncryptionEnabled&gt;false&lt;/ax2371:idTokenEncryptionEnabled&gt;&lt;ax2371:idTokenEncryptionMethod&gt;null&lt;/ax2371:idTokenEncryptionMethod&gt;&lt;ax2371:oauthConsumerKey&gt;_N3CgSNnt_ByNYagralXlMR4bEYa&lt;/ax2371:oauthConsumerKey&gt;&lt;ax2371:oauthConsumerSecret&gt;vnv3tTBNJifJmV2Yi2Vfg4MF6Vca&lt;/ax2371:oauthConsumerSecret&gt;&lt;ax2371:pkceMandatory&gt;false&lt;/ax2371:pkceMandatory&gt;&lt;ax2371:pkceSupportPlain&gt;false&lt;/ax2371:pkceSupportPlain&gt;&lt;ax2371:refreshTokenExpiryTime&gt;84600&lt;/ax2371:refreshTokenExpiryTime&gt;&lt;ax2371:requestObjectSignatureValidationEnabled&gt;false&lt;/ax2371:requestObjectSignatureValidationEnabled&gt;&lt;ax2371:state xsi:nil=&quot;true&quot;/&gt;&lt;ax2371:userAccessTokenExpiryTime&gt;3600&lt;/ax2371:userAccessTokenExpiryTime&gt;&lt;ax2371:username xsi:nil=&quot;true&quot;/&gt;&lt;/ns:return&gt;&lt;/ns:getOAuthApplicationDataByAppNameResponse&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://org.apache.axis2/xsd&quot;&gt;&#xd;
+   &lt;soapenv:Header/&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;xsd:getOAuthApplicationDataByAppName&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;xsd:appName&gt;Sol23-OAuthApp&lt;/xsd:appName&gt;&#xd;
+      &lt;/xsd:getOAuthApplicationDataByAppName&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</queryString>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1527511404320" s="true" lb="Get Access token - Resource Owner" rc="200" rm="OK" tn="Login with OAuth bearer RPA 1-1" dt="text" by="419" sby="417" sc="1" ec="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-store
+Date: Mon, 28 May 2018 12:43:24 GMT
+Pragma: no-cache
+Content-Type: application/json
+Content-Length: 150
+Server: WSO2 Carbon Server
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic X04zQ2dTTm50X0J5TllhZ3JhbFhsTVI0YkVZYTp2bnYzdFRCTkppZkptVjJZaTJWZmc0TUY2VmNh
+charset: UTF-8
+Content-Length: 49
+Host: localhost:9443
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;access_token&quot;:&quot;d362702a-39a5-39fa-979f-379788b2f399&quot;,&quot;refresh_token&quot;:&quot;39de54c6-7691-3d8a-9581-29f8c3713e83&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3426}</responseData>
+  <cookies class="java.lang.String">JSESSIONID=F16B9A7125BC87CC0E0447E817D5C962</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">grant_type=password&amp;username=admin&amp;password=admin</queryString>
+</httpSample>
+<httpSample t="153" it="0" lt="153" ct="0" ts="1527511404782" s="true" lb="Request to authorize endpoint with token" rc="302" rm="Found" tn="Login with OAuth bearer RPA 1-1" dt="" by="805" sby="441" sc="1" ec="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 302 Found
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Set-Cookie: pastr-e465f850-91d4-4128-81d0-55063098047d=99e531b1-8db3-45aa-9f5b-81d97b52a93d; Path=/; Secure; HttpOnly
+Set-Cookie: pastr-e465f850-91d4-4128-81d0-55063098047d=99e531b1-8db3-45aa-9f5b-81d97b52a93d; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: commonAuthId=f1c60548-83c9-47d3-8a31-2c8320b6c302; Path=/; Secure; HttpOnly
+Set-Cookie: opbs=59d25728-8253-4cbe-af88-2ea562d3f98b; Path=/; Secure
+Date: Mon, 28 May 2018 12:43:24 GMT
+Location: http://mycallback?code=58b256a2-0f3c-3618-8eeb-f605d0fcfa6d&amp;session_state=75d94ddabd8f60527be76b39d1684cf562af42e1a935bfc5f39f069c8a7d2416.wclZ0pDXEECj-zAU737Dgg
+Content-Length: 0
+Server: WSO2 Carbon Server
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: Bearer d362702a-39a5-39fa-979f-379788b2f399
+Content-Type: application/x-www-form-urlencoded
+charset: UTF-8
+Content-Length: 107
+Host: localhost:9443
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+</requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <cookies class="java.lang.String">JSESSIONID=F16B9A7125BC87CC0E0447E817D5C962</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">response_type=code&amp;client_id=_N3CgSNnt_ByNYagralXlMR4bEYa&amp;redirect_uri=http%3A%2F%2Fmycallback&amp;scope=openid</queryString>
+  <redirectLocation class="java.lang.String">http://mycallback?code=58b256a2-0f3c-3618-8eeb-f605d0fcfa6d&amp;session_state=75d94ddabd8f60527be76b39d1684cf562af42e1a935bfc5f39f069c8a7d2416.wclZ0pDXEECj-zAU737Dgg</redirectLocation>
+</httpSample>
+<httpSample t="102" it="0" lt="102" ct="0" ts="1527511405195" s="true" lb="Request access token using code" rc="200" rm="OK" tn="Login with OAuth bearer RPA 1-1" dt="text" by="1378" sby="623" sc="1" ec="0" ng="1" na="1">
+  <assertionResult>
+    <name>HTTP/1.1 200 OK Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-store
+Date: Mon, 28 May 2018 12:43:25 GMT
+Pragma: no-cache
+Content-Type: application/json
+Content-Length: 1108
+Server: WSO2 Carbon Server
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic X04zQ2dTTm50X0J5TllhZ3JhbFhsTVI0YkVZYTp2bnYzdFRCTkppZkptVjJZaTJWZmc0TUY2VmNh
+charset: UTF-8
+Content-Length: 160
+Host: localhost:9443
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;access_token&quot;:&quot;85ff3692-7d61-3731-9fbe-fdbfbdd4d25e&quot;,&quot;refresh_token&quot;:&quot;0afdce0e-e220-3670-a447-a54c1e1e478f&quot;,&quot;scope&quot;:&quot;openid&quot;,&quot;id_token&quot;:&quot;eyJ4NXQiOiJOVEF4Wm1NeE5ETXlaRGczTVRVMVpHTTBNekV6T0RKaFpXSTRORE5sWkRVMU9HRmtOakZpTVEiLCJraWQiOiJOVEF4Wm1NeE5ETXlaRGczTVRVMVpHTTBNekV6T0RKaFpXSTRORE5sWkRVMU9HRmtOakZpTVEiLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiS21mTEtiWW8wWWtTa1lfLW9zVllkQSIsImNfaGFzaCI6IkFtS1dSZnJlSEJxeno5SGVHZExxckEiLCJzdWIiOiJhZG1pbiIsImF1ZCI6WyJfTjNDZ1NObnRfQnlOWWFncmFsWGxNUjRiRVlhIl0sImF6cCI6Il9OM0NnU05udF9CeU5ZYWdyYWxYbE1SNGJFWWEiLCJhbXIiOltdLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJleHAiOjE1Mjc1MTUwMDUsImlhdCI6MTUyNzUxMTQwNSwic2lkIjoiYWMxYTIzYWUtZmEzYy00MWQ0LWI5YWYtMzg2ZWFkZWZhNTNhIn0.hwPNE8SsExnDhifww7NdsB5w-cxpL1CuwxT9-ZA6sOeNko2roQTx8K0DSrmUUFj9TGf74elAt6L6_TA55vwnPtEswqjGLfR4DOq5OqrCIuVhQALsAUtIpXeDFtlG7p74J49SAPk2oyUw2GPlLMEphnmEzscKGaUZtc_hx5B2NHwDc9PvQ7IL6hSB0D7iT2EOVpy7jpp4fQhVF3Qg0VtyOLsB7ZIVjZ7haedXzRCXvx12vVN7-7SvKRA5cz1_sRp9kGbAQTX1ORINyMT3TIJTahHc6DXWfXUyCRwAYhQzfbbm4kB_0-58Jcb_7PFOnjudgxB60XQFMvXJaeKJqzmlbw&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}</responseData>
+  <cookies class="java.lang.String">JSESSIONID=F16B9A7125BC87CC0E0447E817D5C962; commonAuthId=f1c60548-83c9-47d3-8a31-2c8320b6c302; opbs=59d25728-8253-4cbe-af88-2ea562d3f98b</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">grant_type=authorization_code&amp;client_id=_N3CgSNnt_ByNYagralXlMR4bEYa&amp;redirect_uri=http%3A%2F%2Fmycallback&amp;code=58b256a2-0f3c-3618-8eeb-f605d0fcfa6d&amp;scope=openid</queryString>
+</httpSample>
+<httpSample t="126" it="0" lt="126" ct="0" ts="1527511405651" s="true" lb="Validate new token" rc="200" rm="OK" tn="Login with OAuth bearer RPA 1-1" dt="text" by="389" sby="433" sc="1" ec="0" ng="1" na="1">
+  <assertionResult>
+    <name>Active true assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Date: Mon, 28 May 2018 12:43:25 GMT
+Content-Type: application/json
+Content-Length: 163
+Server: WSO2 Carbon Server
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic YWRtaW46YWRtaW4=
+Content-Length: 42
+Host: localhost:9443
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;scope&quot;:&quot;openid&quot;,&quot;active&quot;:true,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;exp&quot;:1527515005,&quot;iat&quot;:1527511405,&quot;client_id&quot;:&quot;_N3CgSNnt_ByNYagralXlMR4bEYa&quot;,&quot;username&quot;:&quot;admin@carbon.super&quot;}</responseData>
+  <cookies class="java.lang.String">JSESSIONID=F16B9A7125BC87CC0E0447E817D5C962; commonAuthId=f1c60548-83c9-47d3-8a31-2c8320b6c302; opbs=59d25728-8253-4cbe-af88-2ea562d3f98b</cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">token=85ff3692-7d61-3731-9fbe-fdbfbdd4d25e</queryString>
+</httpSample>
+
+</testResults>
